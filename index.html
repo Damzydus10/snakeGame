@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exploration Snake Game</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/6d3b596002.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="screens">
+    <div class="menu" id="start-menu">
+      <h1 class="title">Exploration Snake</h1>
+      <button class="btn start-btn">Start</button>
+      <button class="btn settings-btn">Settings</button>
+      <button class="btn exit-btn">Exit</button>
+    </div>
+    <div class="menu" id="difficulty-menu">
+      <h1 class="title">Difficulty</h1>
+      <button class="btn difficulty-btn" id="easy">Easy</button>
+      <button class="btn difficulty-btn" id="medium">Medium</button>
+      <button class="btn difficulty-btn" id="hard">Hard</button>
+    </div>
+    <div class="menu" id="over-menu">
+      <h1 class="title">Game Over</h1>
+      <h2 class="score">Score: <span id="final-score">10</span></h2>
+      <button class="btn restart-btn" id="hard">Restart</button>
+    </div>
+    <div class="menu" id="pause-menu">
+      <h1 class="title">Game Paused</h1>
+      <button class="btn" id="resume-btn">Resume</button>
+      <button class="btn restart-btn">Restart</button>
+    </div>
+
+
+    <!--game canva-->
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <!--options icon-->
+  <div class="icons">
+    <button class="icon" id="pause-btn">
+      <i class="fas fa-pause"></i>
+    </button>
+    <button class="icon" id="music-btn">
+      <i class="fas fa-volume-up"></i>
+    </button>
+  </div>
+  <!--script-->
+  <script src="script.js"></script>
+</body>
+
+</html>
